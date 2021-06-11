@@ -3,7 +3,7 @@ node
 def mavenHome = tool name: 'Maven3.8.1'
 stage('CodeClone') 
 {
-git credentialsId: 'git-credentials', url: 'https://github.com/AllenBits/web'
+git credentialsId: 'git-credentials', url: 'https://github.com/AllenBits/maven-web-app'
 }
 stage('mavenBuild')
 {
